@@ -74,8 +74,8 @@ def generate_launch_description():
     # )
     
     # 机器人列表与初始位姿配置
-    robot_names = ['robot_0', 'robot_1', 'robot_2', 'robot_3', 'robot_4',
-                   'robot_5', 'robot_6', 'robot_7', 'robot_8', 'robot_9'
+    robot_names = ['R1', 'R2', 'R3', 'R4', 'R5',
+                   'R6', 'R7', 'R8', 'R9', 'R10'
     ]
     initial_poses = [
         {'x': '0.5', 'y': '1', 'z': '0.1', 'yaw': '-1.5708'},

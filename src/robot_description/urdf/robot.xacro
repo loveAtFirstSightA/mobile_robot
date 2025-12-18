@@ -87,8 +87,7 @@
     </gazebo>
 
     <!-- wheel_right_joint -->
-    <!-- <joint name="wheel_right_joint" type="continuous"> -->
-    <joint name="wheel_right_joint" type="fixed">
+    <joint name="wheel_right_joint" type="continuous">
         <parent link="base_link"/>
         <child link="wheel_right_link"/>
         <origin xyz="0 -0.1021 0.01835" rpy="-1.57 0 0"/>
@@ -100,7 +99,7 @@
         <visual>
             <!-- <origin xyz="0 0 0" rpy="0 0 0"/> -->
             <geometry>
-                <cylinder length="0.018" radius="0.033"/>
+                <!-- <cylinder length="0.018" radius="0.033"/> -->
                 <mesh filename="file://$(find robot_description)/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="dark"/>
@@ -109,7 +108,7 @@
         <collision>
             <!-- <origin xyz="0 0 0" rpy="0 0 0"/> -->
             <geometry>
-                <cylinder length="0.018" radius="0.033"/>
+                <!-- <cylinder length="0.018" radius="0.033"/> -->
                 <mesh filename="file://$(find robot_description)/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
@@ -126,8 +125,7 @@
     </gazebo>
 
     <!-- wheel_left_joint -->
-    <!-- <joint name="wheel_left_joint" type="continuous"> -->
-    <joint name="wheel_left_joint" type="fixed">
+    <joint name="wheel_left_joint" type="continuous">
         <parent link="base_link"/>
         <child link="wheel_left_link"/>
         <origin xyz="0 0.1021 0.01835" rpy="-1.57 0 0"/>
@@ -139,7 +137,7 @@
         <visual>
             <!-- <origin xyz="0 0 0" rpy="0 0 0"/> -->
             <geometry>
-                <cylinder length="0.018" radius="0.033"/>
+                <!-- <cylinder length="0.018" radius="0.033"/> -->
                 <mesh filename="file://$(find robot_description)/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="dark"/>
@@ -148,7 +146,7 @@
         <collision>
             <!-- <origin xyz="0 0 0" rpy="0 0 0"/> -->
             <geometry>
-                <cylinder length="0.018" radius="0.033"/>
+                <!-- <cylinder length="0.018" radius="0.033"/> -->
                 <mesh filename="file://$(find robot_description)/meshes/wheel.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
@@ -225,6 +223,7 @@
                     <namespace>$(arg robot_namespace)</namespace>
                     <remapping>~/out:=imu</remapping>
                 </ros>
+                <initial_orientation_as_reference>false</initial_orientation_as_reference>
             </plugin>
         </sensor>
     </gazebo>
@@ -270,24 +269,24 @@
             <pose>0 0 0 0 0 0</pose>
             <update_rate>50</update_rate>
             <ray>
-            <scan>
-                <horizontal>
-                <samples>360</samples>
-                <resolution>1.000000</resolution>
-                <min_angle>0.000000</min_angle>
-                <max_angle>6.28319</max_angle>
-                </horizontal>
-            </scan>
-            <range>
-                <min>0.080000</min>
-                <max>8.0</max>
-                <resolution>0.001000</resolution>
-            </range>
-            <noise>
-                <type>gaussian</type>
-                <mean>0.0</mean>
-                <stddev>0.0001</stddev>
-            </noise>
+                <scan>
+                    <horizontal>
+                        <samples>360</samples>
+                        <resolution>1.000000</resolution>
+                        <min_angle>0.000000</min_angle>
+                        <max_angle>6.28319</max_angle>
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.080000</min>
+                    <max>8.0</max>
+                    <resolution>0.001000</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.0001</stddev>
+                </noise>
             </ray>
             <plugin name="robot_laserscan" filename="libgazebo_ros_ray_sensor.so">
                 <ros>

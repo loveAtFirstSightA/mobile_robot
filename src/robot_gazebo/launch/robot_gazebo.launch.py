@@ -42,13 +42,13 @@ def generate_launch_description():
 
     declare_robot_namespace_cmd = DeclareLaunchArgument(
         name='robot_namespace',
-        default_value='R',
+        default_value='R0',
         description='机器人命名空间（也用于 xacro 中的 robot_namespace 参数）'
     )
 
     declare_world_cmd = DeclareLaunchArgument(
         name='world',
-        default_value=os.path.join(pkg_robot_gazebo, 'worlds', 'empty_world.world'),
+        default_value=os.path.join(pkg_robot_gazebo, 'worlds', 'house.world'),
         description='Gazebo world 文件路径'
     )
 
@@ -103,8 +103,8 @@ def generate_launch_description():
         arguments=[
             '-topic', 'robot_description',
             '-entity', robot_namespace,
-            '-x', '0',
-            '-y', '0',
+            '-x', '-1.0',
+            '-y', '4.0',
             # '-Y', '-1.5708'
             '-Y', '0'
         ],
