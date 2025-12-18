@@ -42,7 +42,7 @@ def generate_launch_description():
 
     declare_robot_namespace_cmd = DeclareLaunchArgument(
         name='robot_namespace',
-        default_value='robot_0',
+        default_value='R',
         description='机器人命名空间（也用于 xacro 中的 robot_namespace 参数）'
     )
 
