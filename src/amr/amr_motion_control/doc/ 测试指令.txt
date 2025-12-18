@@ -1,0 +1,77 @@
+ros2 topic pub /amr_0_paths amr_msgs/msg/Paths "paths:
+- id: 0
+  type: 0
+  rotate:
+    sa: 0.0
+    ea: -1.57
+  line: {sx: 0.0, sy: 0.0, ex: 0.0, ey: 0.0}
+- id: 1
+  type: 1
+  rotate: {sa: 0.0, ea: 0.0}
+  line:
+    sx: 1.0
+    sy: 21.0
+    ex: 1.0
+    ey: 19.0
+- id: 2
+  type: 0
+  rotate:
+    sa: 0.0
+    ea: 0.0
+  line: {sx: 0.0, sy: 0.0, ex: 0.0, ey: 0.0}
+- id: 3
+  type: 1
+  rotate: {sa: 0.0, ea: 0.0}
+  line:
+    sx: 1.0
+    sy: 19.0
+    ex: 3.0
+    ey: 19.0
+- id: 4
+  type: 0
+  rotate:
+    sa: 0.0
+    ea: -1.57
+  line: {sx: 0.0, sy: 0.0, ex: 0.0, ey: 0.0}
+- id: 5
+  type: 1
+  rotate: {sa: 0.0, ea: 0.0}
+  line:
+    sx: 3.0
+    sy: 19.0
+    ex: 3.0
+    ey: 17.0
+- id: 6
+  type: 0
+  rotate:
+    sa: 0.0
+    ea: 3.14
+  line: {sx: 0.0, sy: 0.0, ex: 0.0, ey: 0.0}
+- id: 7
+  type: 1
+  rotate: {sa: 0.0, ea: 0.0}
+  line:
+    sx: 3.0
+    sy: 17.0
+    ex: 1.0
+    ey: 17.0
+- id: 8
+  type: 0
+  rotate:
+    sa: 0.0
+    ea: 1.57
+  line: {sx: 0.0, sy: 0.0, ex: 0.0, ey: 0.0}
+- id: 9
+  type: 1
+  rotate: {sa: 0.0, ea: 0.0}
+  line:
+    sx: 1.0
+    sy: 17.0
+    ex: 1.0
+    ey: 21.0
+- id: 10
+  type: 0
+  rotate:
+    sa: 0.0
+    ea: -1.57
+  line: {sx: 0.0, sy: 0.0, ex: 0.0, ey: 0.0}" --once
