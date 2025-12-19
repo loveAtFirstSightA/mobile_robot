@@ -6294,10 +6294,10 @@
       <pose>2.79616 -1.85311 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>190 412000000</sim_time>
-      <real_time>191 142428764</real_time>
-      <wall_time>1766054317 8532045</wall_time>
-      <iterations>190412</iterations>
+      <sim_time>299 546000000</sim_time>
+      <real_time>114 345789545</real_time>
+      <wall_time>1766123584 883758183</wall_time>
+      <iterations>109134</iterations>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -6309,7 +6309,7 @@
         </link>
       </model>
       <model name='turtlebot3_house'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 -0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='Wall_101'>
           <pose>-0.05 3.1 0 0 0 -1.5708</pose>
@@ -6441,9 +6441,9 @@
           <pose>0.883462 -0.576236 0 0 0 -3.14159</pose>
           <scale>1 1 1</scale>
           <link name='link'>
-            <pose>0.883462 -0.576236 -9e-06 7e-06 -8e-06 -3.14159</pose>
+            <pose>0.883462 -0.576236 -9e-06 -6e-06 -6e-06 -3.14159</pose>
             <velocity>0 0 0 0 -0 0</velocity>
-            <acceleration>0 0 -9.8 0 -0 0</acceleration>
+            <acceleration>0 0 -9.8 -0 -0 -0</acceleration>
             <wrench>0 0 -9.8 0 -0 0</wrench>
           </link>
         </model>
@@ -6531,27 +6531,27 @@
           <pose>1.88346 1.91193 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='link'>
-            <pose>1.8835 1.91192 -4e-06 -1e-06 7e-06 -0.000245</pose>
+            <pose>1.8835 1.9119 -2e-06 2e-06 1.5e-05 -0.000294</pose>
             <velocity>0 0 0 0 -0 0</velocity>
-            <acceleration>-3.13278 -6.69956 17.7421 2.47424 -0.91995 3.12721</acceleration>
-            <wrench>-15.1337 -32.364 85.7079 0 -0 0</wrench>
+            <acceleration>-6.28666 0.908332 5.51907 0.667319 1.36037 3.13413</acceleration>
+            <wrench>-30.3693 4.38793 26.6613 0 -0 0</wrench>
           </link>
         </model>
         <model name='first_2015_trash_can_0'>
           <pose>-4.69354 4.89439 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='link'>
-            <pose>-4.69351 4.89438 -4e-06 0 4e-06 -0.000147</pose>
+            <pose>-4.6935 4.89438 -1e-06 2e-06 1.6e-05 -0.000178</pose>
             <velocity>0 0 0 0 -0 0</velocity>
-            <acceleration>-1.60064 0.738133 -5.55153 1.13749 1.20438 -3.14157</acceleration>
-            <wrench>-7.7323 3.56574 -26.8181 0 -0 0</wrench>
+            <acceleration>-6.56569 -0.960073 6.19827 2.6067 1.02247 5.4e-05</acceleration>
+            <wrench>-31.7173 -4.63788 29.9423 0 -0 0</wrench>
           </link>
         </model>
         <model name='table'>
           <pose>-2.65728 2.42376 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='link'>
-            <pose>-2.65728 2.42376 -2e-06 0 -0 0</pose>
+            <pose>-2.65728 2.42376 -9e-06 0 -1e-06 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 -9.8 0 -0 0</acceleration>
             <wrench>0 0 -9.8 0 -0 0</wrench>
@@ -6574,9 +6574,9 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-0.17408 -5.84328 21.8599 0 1.2868 1.56374</pose>
-        <view_controller>orbit</view_controller>
-        <projection_type>perspective</projection_type>
+        <pose>0.012902 -4.63765 17.1108 0 1.2868 1.56374</pose>
+        <view_controller>ortho</view_controller>
+        <projection_type>orthographic</projection_type>
       </camera>
     </gui>
   </world>
