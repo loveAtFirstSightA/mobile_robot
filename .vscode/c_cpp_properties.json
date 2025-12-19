@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "ROS2-Humble",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/humble/include/**",
+                "/usr/include/**",
+                "/usr/local/include/**"
+            ],
+            "defines": [
+                "ROS2",
+                "RCUTILS_ENABLE_FAULT_INJECTION=1"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/src",
+                    "/opt/ros/humble/include",
+                    "/usr/include",
+                    "/usr/local/include"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            }
+        }
+    ],
+    "version": 4
+}
