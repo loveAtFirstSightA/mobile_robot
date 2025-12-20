@@ -357,7 +357,7 @@
     <gazebo reference="base_scan">
         <sensor name="hls_lfcd_lds" type="ray">
             <always_on>true</always_on>
-            <visualize>false</visualize>
+            <visualize>true</visualize>
             <pose>0 0 0 0 0 0</pose>
             <update_rate>50</update_rate>
             <ray>
@@ -377,7 +377,7 @@
                 <noise>
                     <type>gaussian</type>
                     <mean>0.0</mean>
-                    <stddev>0.001</stddev>
+                    <stddev>0.0001</stddev>
                 </noise>
             </ray>
             <plugin name="robot_laserscan" filename="libgazebo_ros_ray_sensor.so">
