@@ -1,6 +1,0 @@
-# current amr pose
-amr_msgs/Line line
-amr_msgs/Pose pose
-float32 v
----
-amr_msgs/Velocity velocity

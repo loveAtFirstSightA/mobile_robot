@@ -1,6 +1,0 @@
-# 
-amr_msgs/Point start
-amr_msgs/Point end
-amr_msgs/Point[] map
----
-amr_msgs/Point[] points

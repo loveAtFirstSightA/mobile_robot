@@ -11,3 +11,8 @@ ros2 launch robot_gazebo robot_gazebo.launch.py
 
 多机器人环境
 ros2 launch robot_gazebo robots_gazebo.launch.py
+
+启动仿真建图
+
+ros2 launch robot_cartographer cartographer.launch.py use_sim_time:=true
+
