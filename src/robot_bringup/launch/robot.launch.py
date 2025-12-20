@@ -89,5 +89,5 @@ def generate_launch_description():
                 robot_param_dir,
                 {'namespace': namespace}],
             arguments=['-i', usb_port],
-            output='screen'),
+            output='screen')
     ])

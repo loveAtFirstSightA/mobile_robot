@@ -23,7 +23,7 @@ using robot::Robot;
 using namespace std::chrono_literals;
 
 Robot::Robot(const std::string & usb_port)
-: Node("Robot_node", rclcpp::NodeOptions().use_intra_process_comms(true))
+: Node("robot_node", rclcpp::NodeOptions().use_intra_process_comms(true))
 {
     RCLCPP_INFO(get_logger(), "Init Robot Node Main");
     node_handle_ = std::shared_ptr<::rclcpp::Node>(this, [](::rclcpp::Node *) {});
