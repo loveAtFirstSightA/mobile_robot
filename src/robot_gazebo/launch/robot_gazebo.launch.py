@@ -105,6 +105,7 @@ def generate_launch_description():
             '-entity', robot_namespace,
             '-x', '4.0',
             '-y', '1.0',
+            '-z', '0.005',
             '-Y', '1.57'
         ],
         output='screen'
