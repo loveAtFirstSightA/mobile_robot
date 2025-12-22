@@ -84,6 +84,11 @@ def generate_launch_description():
     #         )
     #     )
     # )
+    
+    robot_polygon = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(get_package_share_directory('robot_polygon'),
+            'launch', 'robot_polygon.launch.py')))
 
     # --------------------
     # Gazebo 启动
@@ -103,8 +108,8 @@ def generate_launch_description():
         arguments=[
             '-topic', 'robot_description',
             '-entity', robot_namespace,
-            '-x', '4.5',
-            '-y', '1.0',
+            '-x', '4.0',
+            '-y', '0.5',
             '-z', '0.005',
             '-Y', '1.57'
         ],
@@ -122,6 +127,7 @@ def generate_launch_description():
         joint_state_publisher_node,
         robot_state_publisher_node,
         gazebo_launch,
-        spawn_entity_node
+        spawn_entity_node,
+        robot_polygon
         # robot_true_pose
     ])

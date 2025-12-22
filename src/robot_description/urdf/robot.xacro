@@ -363,7 +363,7 @@
             <always_on>true</always_on>
             <visualize>true</visualize>
             <pose>0 0 0 0 0 0</pose>
-            <update_rate>50</update_rate>
+            <update_rate>100</update_rate>
             <ray>
                 <scan>
                     <horizontal>
