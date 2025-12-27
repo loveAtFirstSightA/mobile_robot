@@ -178,6 +178,9 @@ void Odometry::publish(const rclcpp::Time & now)
     tf2::Quaternion q;
     q.setRPY(0.0, 0.0, robot_pose_[2]);
 
+    // info odometry pose orientation
+    // RCLCPP_INFO(nh_->get_logger(), "Odometry: x: %f, y: %f, theta: %f", robot_pose_[0], robot_pose_[1], robot_pose_[2]);
+
     odom_msg->pose.pose.orientation.x = q.x();
     odom_msg->pose.pose.orientation.y = q.y();
     odom_msg->pose.pose.orientation.z = q.z();

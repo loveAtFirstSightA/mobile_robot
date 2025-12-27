@@ -3,3 +3,4 @@ install/
 log/
 *.AppImage
 *.AppImage
+machine.list

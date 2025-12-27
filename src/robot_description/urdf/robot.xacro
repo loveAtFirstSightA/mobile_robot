@@ -3,7 +3,7 @@
     
     <!-- add namespace -->
     <xacro:arg name="robot_namespace" default=""/>
-    <xacro:property name="robot_namespace"/>    
+    <xacro:property name="robot_namespace"/>
 
     <!-- init color -->
     <material name="black">
